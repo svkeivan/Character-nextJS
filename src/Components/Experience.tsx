@@ -3,11 +3,8 @@ import { OrbitControls } from "@react-three/drei";
 import { extend } from "@react-three/fiber";
 import { PlaneGeometry } from "three";
 
-// import Woman from "./Woman";
 import CanvasLoader from "./CanvasLoader";
-// import { Girl } from "./Girl";
-import { NewGirl } from "./GirlAnimation";
-import { Girls } from "./Girls";
+import Girls from "./Girls";
 
 extend({ PlaneGeometry });
 
