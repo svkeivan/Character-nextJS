@@ -1,10 +1,13 @@
-"use client";
+import { Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { extend } from "@react-three/fiber";
 import { PlaneGeometry } from "three";
-import Woman from "./Woman";
-import { Suspense } from "react";
+
+// import Woman from "./Woman";
 import CanvasLoader from "./CanvasLoader";
+// import { Girl } from "./Girl";
+import { NewGirl } from "./GirlAnimation";
+import { Girls } from "./Girls";
 
 extend({ PlaneGeometry });
 
@@ -18,14 +21,14 @@ const Experience = () => {
       />
       <ambientLight />
       <directionalLight
-        intensity={1.5}
+        intensity={2}
         position={[-5, 5, 5]}
         castShadow
         shadow-mapSize={1024}
       />
       <group position={[0, -0.75, 0]}>
         <Suspense fallback={<CanvasLoader />}>
-          <Woman />
+          <Girls />
         </Suspense>
       </group>
       <mesh

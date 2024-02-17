@@ -1,6 +1,5 @@
 "use client";
 import { Canvas } from "@react-three/fiber";
-// import Experience from "../Components/Experience";
 import dynamic from "next/dynamic";
 import AnimationButtons from "../Components/AnimationButtons";
 import { CharacterAnimationsProvider } from "../Contexts/CharacterAnimations";

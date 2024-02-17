@@ -18,7 +18,7 @@ const AnimationButtons = () => {
               key={`animationButoon${i}`}
               onClick={() => setAnimationIndex(i)}
               className={`rounded-lg bg-green-600 p-2 text-white ${
-                animationIndex === i ? "bg-green-800" : ""
+                animationIndex === i ? "scale-110 bg-green-800" : ""
               }`}
             >
               {animation}
